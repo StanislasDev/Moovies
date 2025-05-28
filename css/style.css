@@ -1,0 +1,158 @@
+@import url('/Poppins-Light.ttf');
+/* ################## 
+      Navigation 
+##################  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --accent: rgb(244,54,54);
+  --accent2: rgb(157,8,8);
+  --text: #fff;
+  --bg: #060606;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+
+.btn {
+  background: var(--accent);
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  transition: background .2s ease-in-out;
+}
+
+.btn:hover {
+  background: var(--accent2);
+}
+
+section {
+  padding: 4rem 0 1.5rem;
+}
+
+/* ################## 
+      Navigation 
+##################  */
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  transition: .5s ease-in-out;
+}
+
+nav.active {
+  background: var(--bg);
+  box-shadow: 0 5px 5px 0 rgba(255, 255, 255, .2);
+}
+
+nav.fas {
+  color: var(--text);
+  font-size: 1.7rem;
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.navigation {
+  display: flex;
+  column-gap: 5rem;
+}
+
+.navigation a {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.navigation li {
+  position: relative;
+}
+
+.navigation a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: .4s ease-in-out;
+}
+
+.navigation a:hover, a.link-active {
+  color: var(--accent);
+}
+
+.navigation a:hover::after, a.link-active::after {
+  width: 100%;
+}
+
+#menu-burger {
+  z-index: 10000;
+  cursor: pointer;
+  display: none;
+}
+
+/* ################## 
+      Home 
+##################  */
+
+
+/* ################## 
+      Films 
+##################  */
+
+
+/* ################## 
+      À venir 
+##################  */
+
+
+/* ################## 
+      Newsletter 
+##################  */
+
+
+/* ################## 
+      Footer 
+##################  */
+
+
+/* ################## 
+      Breakpoint 
+##################  */
+
